@@ -3,6 +3,8 @@ var calculatePayments = require('./payments');
 
 var reckon = function(householdId) {
 
+  console.log('6: householdId is: ', householdId);
+
   if (typeof householdId !== 'number') {
     householdId = parseInt(householdId, 10);
     if (isNaN(householdId)) {
@@ -40,6 +42,7 @@ var reckon = function(householdId) {
   })
 
     .then(function(household) {
+      console.log('45: household is: ', household);
       if (!household) {
         throw new Error('Nothing to reckon.');
       }

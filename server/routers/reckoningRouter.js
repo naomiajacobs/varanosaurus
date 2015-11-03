@@ -26,12 +26,14 @@ router.get('/', function(request, response) {
 //we trigger a reckoning for the household
 router.post('/', function(request, response) {
   var householdId = request.decoded.householdId;
+  console.log('householdId is: ', householdId);
   if (!householdId) {
     response.status(400).send('No household saved on token');
   }
 
   reckon(householdId)
     .then(function(reckoning) {
+      console.log('reckoning id: ', reckoning.id);
       db.Reckoning.findById(reckoning.id, {include: [{model: db.User, attributes: {exclude: ['password']}}, {model: db.Item}]})
         .then(function(reckoning) {
           response.status(201).json({reckoning});

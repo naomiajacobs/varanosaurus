@@ -71,7 +71,9 @@ exports.setReckoningDetailsMode = function(mode) {
 
 // SET_SETTINGS_VIEW_MODE
 exports.setSettingsViewMode = function(mode) {
+  console.log('in uimodeActions setSettingsViewMode, mode is: ', mode);
   if (mode === 'leave') {
+    console.log('mode is leave, initiating reckoning');
     return ReckoningActions.initiateReckoning(true);
   } else {
     return settingsViewMode(mode);

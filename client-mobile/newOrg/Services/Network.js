@@ -191,6 +191,7 @@ var getSelectedReckoning = function(id) {
 
 var initiateReckoning = function() {
   var params = makeParams('POST');
+  console.log('params from initiateReckoning: ', params);
   return fetch(url + reckoningUrl, params)
     .catch(function(error) {
       console.error(error);

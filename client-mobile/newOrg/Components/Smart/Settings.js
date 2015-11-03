@@ -76,9 +76,9 @@ var Settings = React.createClass({
   },
 
   gotoReckonAndLeave() {
-    // this.props.dispatch(Actions.initiateReckoning());
+    // this.props.dispatch(Actions.initiateReckoning(true));
+    console.log('in settings, calling gotoReckonAndLeave');
     this.props.dispatch(Actions.setSettingsViewMode('leave'));
-    // this.props.dispatch(Actions.fetchSelectedReckoning());
   },
 
   gotoSettingsOptions() {

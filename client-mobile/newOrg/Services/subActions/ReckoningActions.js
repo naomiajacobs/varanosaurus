@@ -50,6 +50,8 @@ function fetchSelectedReckoningSuccess(data) {
 
 exports.initiateReckoning = function(shouldSetSettingsViewModeToLeave) {
 
+  console.log('in initiateReckoning in reckoningActions');
+
   return function(dispatch) {
     return Network.initiateReckoning()
       .then(function(response) {
