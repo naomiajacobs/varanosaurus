@@ -1,8 +1,8 @@
 process.env['NODE_ENV'] = 'testing';
 var request = require('request');
-var url = 'http://localhost:8080/api/users/';
+var url = 'http://localhost:5000/api/users/';
 var db = require('../../server/db/interface');
-var householdUrl = 'http://localhost:8080/api/households';
+var householdUrl = 'http://localhost:5000/api/households';
 
 //really-need lets us easily clear node's cache
 //after each test so that we can have a clean
@@ -23,7 +23,7 @@ describe('userRouter', function() {
       .then(function() {
 
         //seed db with user
-        var userUrl = 'http://localhost:8080/auth/signup';
+        var userUrl = 'http://localhost:5000/auth/signup';
         var userBody = JSON.stringify({
           username: 'nedStark',
           password: 'RPlusLEqualsJ',

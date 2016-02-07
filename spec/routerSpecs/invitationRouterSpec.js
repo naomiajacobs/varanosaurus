@@ -2,8 +2,8 @@ process.env['NODE_ENV'] = 'testing';
 process.env['TOKEN_SECRET'] = 'testing';
 
 var request = require('request');
-var inviteUrl = 'http://localhost:8080/api/invitations/';
-// var authUrl = 'http://localhost:8080/auth';
+var inviteUrl = 'http://localhost:5000/api/invitations/';
+// var authUrl = 'http://localhost:5000/auth';
 var db = require('../../server/db/interface');
 var tokens = require('../../server/services/tokens');
 

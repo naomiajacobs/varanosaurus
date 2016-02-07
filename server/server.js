@@ -1,5 +1,4 @@
 var express = require('express');
-// var path = require('path');
 var db = require('./db/interface');
 var morgan = require('morgan');
 var verifyToken = require('./services/middleware').verifyToken;
@@ -20,7 +19,7 @@ if (process.env.NODE_ENV !== 'testing') {
 app.use('/api', verifyToken, apiRouter);
 app.use('/auth', authRouter);
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV === 'testing') {
 

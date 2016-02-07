@@ -2,14 +2,14 @@ process.env['NODE_ENV'] = 'testing';
 process.env['TOKEN_SECRET'] = 'testing';
 
 var request = require('request');
-var url = 'http://localhost:8080/api/reckonings/';
+var url = 'http://localhost:5000/api/reckonings/';
 var db = require('../../server/db/interface');
 
 //urls we'll use when making requests in the beforeEach hook
-var signupUrl = 'http://localhost:8080/auth/signup';
-var userUrl = 'http://localhost:8080/api/users/';
-var householdUrl = 'http://localhost:8080/api/households/';
-var itemUrl = 'http://localhost:8080/api/items/';
+var signupUrl = 'http://localhost:5000/auth/signup';
+var userUrl = 'http://localhost:5000/api/users/';
+var householdUrl = 'http://localhost:5000/api/households/';
+var itemUrl = 'http://localhost:5000/api/items/';
 
 //really-need lets us easily clear node's cache
 //after each test so that we can have a clean

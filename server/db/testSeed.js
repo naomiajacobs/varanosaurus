@@ -60,7 +60,6 @@ var seed = function() {
   ], {returning: true, individualHooks: true})
 
   .then(function(users) {
-
     users.forEach(function(user) {
       userIds[user.username] = user.id;
     });

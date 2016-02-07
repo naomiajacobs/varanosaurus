@@ -1,9 +1,9 @@
 process.env['NODE_ENV'] = 'testing';
 process.env['TOKEN_SECRET'] = 'boblaw';
 var request = require('request');
-var authUrl = 'http://localhost:8080/auth/';
-var householdUrl = 'http://localhost:8080/api/households/';
-var userUrl = 'http://localhost:8080/api/users/';
+var authUrl = 'http://localhost:5000/auth/';
+var householdUrl = 'http://localhost:5000/api/households/';
+var userUrl = 'http://localhost:5000/api/users/';
 var db = require('../../server/db/interface');
 var tokens = require('../../server/services/tokens');
 
