@@ -48,6 +48,7 @@ var imageURIs = [
 ];
 
 Styles.imageURI = imageURIs[Math.floor(Math.random() * imageURIs.length)];
+// Styles.imageURI = 'http://localhost:5000/images/door' + Math.floor(Math.random() * 23);
 
 Styles.background = StyleSheet.create({
   navbarArea: {
