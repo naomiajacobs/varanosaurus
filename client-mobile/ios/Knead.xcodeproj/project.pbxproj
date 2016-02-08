@@ -14,7 +14,6 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* KneadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* KneadTests.m */; };
-		078C7B341BEAD7D500162AA2 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 078C7B321BEAD7D500162AA2 /* JosefinSans-Regular.ttf */; };
 		07CC6ADD1BE4663000CA9DEA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CC6AD51BE4663000CA9DEA /* Entypo.ttf */; };
 		07CC6ADE1BE4663000CA9DEA /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CC6AD61BE4663000CA9DEA /* EvilIcons.ttf */; };
 		07CC6ADF1BE4663000CA9DEA /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 07CC6AD71BE4663000CA9DEA /* FontAwesome.ttf */; };
@@ -32,8 +31,8 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		3F4945091BEB0CAF00A90869 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F4945071BEB0CAF00A90869 /* JosefinSans-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
-		3F49450A1BEB0CAF00A90869 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F4945081BEB0CAF00A90869 /* Lobster-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
+		3F4945091BEB0CAF00A90869 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F4945071BEB0CAF00A90869 /* JosefinSans-Regular.ttf */; };
+		3F49450A1BEB0CAF00A90869 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F4945081BEB0CAF00A90869 /* Lobster-Regular.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -417,7 +416,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 7B7NUR5R4Z;
+						DevelopmentTeam = H5L768HMSF;
 					};
 				};
 			};
@@ -689,6 +688,7 @@
 				INFOPLIST_FILE = Knead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = naomiajacobs;
 				PRODUCT_NAME = Knead;
 				PROVISIONING_PROFILE = "";
 			};
@@ -708,6 +708,7 @@
 				INFOPLIST_FILE = Knead/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = naomiajacobs;
 				PRODUCT_NAME = Knead;
 				PROVISIONING_PROFILE = "";
 			};
