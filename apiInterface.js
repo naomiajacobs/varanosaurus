@@ -41,7 +41,9 @@
     verb: 'GET',
     url: '/api/users/:userId',
     requestBody: null,
-    responseBody: User,
+    responseBody: {
+      user: User,
+    },
   },
 
   'change a user\'s info': {
@@ -60,6 +62,7 @@
         householdId: integer,
       }, 
       token: token, //included since the household may have changed
+      household: Household, //only if part of HH
     }
   },
 
@@ -92,6 +95,7 @@
       name: string,
     },
     responseBody: {
+      user: User,
       household: Household,
       token: token,
     },
@@ -103,10 +107,12 @@
     requestBody: null,
     responseBody: {
       household: Household,
-      users: {
-        user1accountName: integer, //integer will be the userId
-        user2accountName: integer, //etc
-      }
+      users: [
+        {
+          username: string,
+          id: integer,
+        },
+      ],
     }
   },
 

@@ -52,15 +52,33 @@ https://hr33.slack.com/files/kylecho/F0E2ARJQN/venmogif
 ## Requirements
 
 Server:
-- Node 4+
-- Express
-- Sequelize
+- babel
+- babel-core
+- babel-loader
 - bcrypt-nodejs
-- ESLint
+- bluebird
+- body-parser
+- eslint
+- express
+- jsonwebtoken
+- node-schedule
+- pg
+- pg-hstore
+- sequelize
+- webpack
 
 Mobile client:
-- React Native
-- Xcode 7
+- react
+- react-native
+- react-native-action-button
+- react-native-button
+- react-native-modal
+- react-native-navbar
+- react-native-vector-icons
+- react-redux
+- react-timer-mixin
+- redux
+- redux-thunk
 
 
 ## Development
