@@ -11,6 +11,7 @@ var authRouter = require('./routers/authRouter');
 var app = express();
 
 app.use(parser.json());
+app.use(express.static('Assets'));
 
 if (process.env.NODE_ENV !== 'testing') {
   app.use(morgan('dev'));
